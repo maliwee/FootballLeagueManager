@@ -1,0 +1,312 @@
+/* heading of the premier league manager */
+h1{
+  margin-left: 170px;
+  font-family: 'Monospace	';
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* body of the  web page*/
+body{
+  background-color: #E0FFFF;
+  background-image: url(Images/premier-league-logo.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width:100%;
+  height: 900px;
+}
+
+/* search field alignment */
+.search{
+    padding-left: 75%;
+    margin-top: -3px;
+    padding-bottom: 50px;
+}
+
+/* search button design and alignment */
+.searchButton{
+    transition-duration: 0.4s;
+    border: 2px solid #4CAF50;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: grab;
+    border-radius: 25px;
+}
+
+/* search button hover */
+.searchButton:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+/* table of football clubs */
+table{
+    width: 100%;    
+    line-height: 250%;
+    overflow:auto;
+    border-spacing: 0px;
+
+}
+
+/* table heading of football clubs */
+.tablehead{
+    background-color:  #00cc99;
+  
+}
+
+/* table border */
+table, th, td {
+  border: 1px solid black;
+}
+
+/* stripes in the table rows */
+tr:nth-child(even) {background-color: #f2f2f2;}/*stripped rows*/
+tr:nth-child(odd) {background-color:    #ccd9ff;}/*stripped rows*/
+
+/* sort wins in descending order button, design and alignment */
+.sortWinsButton{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25px;
+    cursor: grab;
+}
+
+/*  sort wins in descending order button, hover  */
+.sortWinsButton:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+
+ /*  sort goals scored in descending order button, design and alignment  */
+.sortGoalsScoredButton{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25px;
+    cursor: grab;
+}
+
+/*  sort goals scored in descending order button, hover  */
+.sortGoalsScoredButton:hover {
+    background-color: #f44336;
+    color: white;
+ }
+
+ /*  random matches playing button, design and alignment  */
+.randomMatchButton{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25px;
+    cursor: grab;
+}
+
+ /*  random matches playing button, hover  */
+ .randomMatchButton:hover {
+    background-color: #f44336;
+    color: white;
+ }
+
+/*  sort date in descending order button, design and alignment  */
+.sortByDateButton{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25px;
+    cursor: grab;
+ }
+
+ /*  sort date in descending order button, hover  */
+ .sortByDateButton:hover {
+    background-color: #f44336;
+    color: white;
+ }
+
+ /*  sort points in descending order button, design and alignment  */
+ .sortByPoints{
+  transition-duration: 0.4s;
+  border: 2px solid #f44336;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 28px;
+  cursor: grab;
+}
+
+/*  sort points in descending order button, hover  */
+.sortByPoints:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+ /* The Modal which displays random matches */
+.modal_randomMatches {
+    /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* plce on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* width size*/
+    height: 100%; /* height size*/
+    overflow: auto; /* Enable scroll if needed */
+    
+  }
+  
+  /* Modal Content which displays random matches */
+  .modal-content_randomMatches {
+    background-color: #00d1cc; /* background color */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    padding-bottom: 150px;
+  }
+  
+ /* close the random match modal */
+  .closePopUpRandomMatch{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px;
+    float: right;
+    margin-left: 850px;
+    margin-top: 50px;
+    cursor: grab;
+}
+
+/* close the random match modal button hover */
+.closePopUpRandomMatch:hover {
+    background-color: #f44336;
+    color: rgb(70, 53, 53);
+ }
+  
+/* The Modal which displays date sorted in descending order */
+.modal_sortByDate {
+    position: absolute; /* Stay in fixed place */
+    z-index: 1; /* place on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* width size */
+    height: 100%; /* height size*/
+    overflow: auto;/*If the height exceeds the default size insert a scrool bar*/
+  }
+  
+  /* Modal Content which displays date sorted in descending order*/
+  .modal-content_sortByDate {
+    background-color:   #009eab;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    padding-bottom: 80px;
+  }
+  
+ /* close modal of date sorted in descending order*/
+  .closePopUpSortDate{
+    transition-duration: 0.4s;
+    border: 2px solid #f44336;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px;
+    float: right;
+    margin-left: 850px;
+    margin-top: -40px;
+    cursor: grab;
+}
+
+ /* close modal of date sorted in descending order*/
+.closePopUpSortDate:hover {
+    background-color: #f44336;
+    color: rgb(70, 53, 53);
+ }
+
+ /* The Modal which displays dates which was filtered after searching */
+.modal_filterByDate {
+  position: absolute; /* Stay fixed */
+  z-index: 1; /* plce on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* width size*/
+  height: 100%; /* height size*/
+  overflow: auto;/*If the height exceeds the default size insert a scrool bar*/
+
+}
+
+/* Modal Content which displays dates which was filtered after searching  */
+.modal-content_filterByDate {
+  background-color: #4682B4;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  padding-bottom: 150px;
+
+}
+
+/* close the modal which displays dates which was filtered after searching button,design and alignment */
+.closePopUpFilterDate{
+  transition-duration: 0.4s;
+  border: 2px solid #f44336;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0px;
+  float: right;
+  margin-left: 850px;
+  margin-top: -40px;
+  cursor: grab;
+}
+
+/* close the modal which displays dates which was filtered after searching button,hover */
+.closePopUpFilterDate:hover {
+  background-color: #f44336;
+  color: rgb(70, 53, 53);
+}
+
+/* calender design and alignment */
+.calender{
+  margin-left: 1150px;
+  margin-top: -40px;
+  font-family: Orbitron;
+
+}
+
+/* clock design and alignment */
+.clock{
+  margin-top: -10px;
+  color:darkcyan;
+  font-size: 20px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+  font-weight: bold;
+  background-color: black;
+  width: 130%;
+  text-align: center;
+  margin-left: -250px;
+}
+
+/* header of the page */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding-bottom: -5px;
+}
+
+li {
+  float: left;
+}
